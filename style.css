@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+body {
+  line-height: 1.5;
+  font-family: "futura-pt", 'Century Gothic', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+  background: #1a1a1a;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  will-change: transform;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: #1a1a1a;
+  transform: translateY(-100%);
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.nav--active {
+  transform: translateY(0);
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  flex: 1;
+  position: relative;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.nav__item:hover {
+  opacity: 0.75;
+}
+.nav__thumb {
+  display: block;
+  height: 80px;
+  background: #dc143c;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+
+}
+
+.nav__thumb:before {
+  content: attr(data-letter);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+.nav__label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e6e6e6;
+  margin: 0;
+}
+@media (max-width: 850px) {
+  .nav__label {
+    font-size: 14px;
+  }
+}
+@media (max-width: 720px) {
+  .nav__label {
+    display: none;
+  }
+  .nav__thumb {
+    height: 60px;
+  }
+  .nav__thumb:before {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+}
+.page {
+  height: 100vh;
+  will-change: transform;
+  perspective: 400px;
+  overflow: hidden;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.section {
+  will-change: transform;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  transform: translateX(100%);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.section--hidden {
+  transform: translateX(-100%);
+}
+.section--active {
+  transform: translateX(0) rotateY(0);
+  z-index: 2;
+}
+.section__wrapper {
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 8vw;
+  position: relative;
+}
+.section__title {
+  margin: 0 0 25px 0;
+  font-size: 50px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.section__title:before {
+  content: '';
+  position: absolute;
+  top: 5rem;
+  left: 45%;
+  margin: auto;
+  width: 10%;
+  height: 2px;
+  background: #fff;
+}
+@media (max-width: 720px) {
+  .section__title {
+    font-size: 28px;
+  }
+  .section__title:before {
+    top: 3.25rem;
+  }
+}
+.section p {
+  margin: 0 0 25px 0;
+  font-family: 'Georgia';
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  opacity: 0.55;
+  backdrop-filter: blur(8000123123px); /* Blurlama miktarını istediğiniz gibi ayarlayabilirsiniz */
+  background-color: rgb(0, 0, 0); /* Arkaplan rengini ayarlayabilirsiniz */
+}
+@media (max-width: 720px) {
+  .section p {
+    font-size: 16px;
+  }
+}
+.section p:last-child {
+  margin-bottom: 0;
+}
+.color1 {
+  background-image: url('/foto/b1j2_ho_00_p_1024x768.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1;   background-size: 100%;
+  
+}
+.color2 {
+  background-image: url('/foto/117_marmaris-plajlari.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
+.color3 {
+  background-image: url('/foto/kus.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
+.color4 {
+  background-image: url('/foto/rhodes-island-3-1920.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
+
+.color5 {
+  background-image: url('/foto/fethiye.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
+.color6 {
+  background-image: url('/foto/samos-xxl-jpg_header-213788.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
+.color7{
+  background-image: url('/foto/excursion-alacati-cesme-r32.avif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
+.color8{
+  background-image: url('/foto/Dikili.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  opacity: 1; 
+  background-size: 100%;
+}
