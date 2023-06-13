@@ -169,7 +169,7 @@ ul {
   margin-bottom: 0;
 }
 .color1 {
-  background-image: url('/foto/b1j2_ho_00_p_1024x768.jpg');
+  background-image: url('b1j2_ho_00_p_1024x768.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -178,7 +178,7 @@ ul {
   
 }
 .color2 {
-  background-image: url('/foto/117_marmaris-plajlari.jpg');
+  background-image: url('117_marmaris-plajlari.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
@@ -186,7 +186,7 @@ ul {
   background-size: 100%;
 }
 .color3 {
-  background-image: url('/foto/kus.jpg');
+  background-image: url('kus.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
@@ -194,7 +194,7 @@ ul {
   background-size: 100%;
 }
 .color4 {
-  background-image: url('/foto/rhodes-island-3-1920.jpg');
+  background-image: url('rhodes-island-3-1920.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
@@ -203,7 +203,7 @@ ul {
 }
 
 .color5 {
-  background-image: url('/foto/fethiye.jpg');
+  background-image: url('fethiye.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
@@ -211,7 +211,7 @@ ul {
   background-size: 100%;
 }
 .color6 {
-  background-image: url('/foto/samos-xxl-jpg_header-213788.jpg');
+  background-image: url('samos-xxl-jpg_header-213788.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
@@ -219,7 +219,7 @@ ul {
   background-size: 100%;
 }
 .color7{
-  background-image: url('/foto/excursion-alacati-cesme-r32.avif');
+  background-image: url('excursion-alacati-cesme-r32.avif');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
@@ -227,7 +227,7 @@ ul {
   background-size: 100%;
 }
 .color8{
-  background-image: url('/foto/Dikili.jpg');
+  background-image: url('Dikili.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
